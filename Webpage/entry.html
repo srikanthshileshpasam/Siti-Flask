@@ -49,7 +49,7 @@
 					<span class="label-input100">Receipt Number *</span>
 					<input class="input100" type="number" name="name" placeholder="Enter Receipt Number">
 				</div>
-                
+
                 <div class="wrap-input100 validate-input bg1 rs1-wrap-input100" data-validate = "Enter Amount Paid by Customer">
 					<span class="label-input100">Amount *</span>
 					<input class="input100" type="number" name="email" placeholder="Enter Amount Paid ">
@@ -70,7 +70,7 @@
 				</div>
 
 				<div>
-					
+
 				</div>
 
 				<div class="wrap-input100 bg0 rs1-alert-validate">
@@ -128,42 +128,11 @@
 <!--===============================================================================================-->
 	<script src="vendor/countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
-	<script src="vendor/noui/nouislider.min.js"></script>
-	<script>
-	    var filterBar = document.getElementById('filter-bar');
 
-	    noUiSlider.create(filterBar, {
-	        start: [ 1500, 3900 ],
-	        connect: true,
-	        range: {
-	            'min': 1500,
-	            'max': 7500
-	        }
-	    });
-
-	    var skipValues = [
-	    document.getElementById('value-lower'),
-	    document.getElementById('value-upper')
-	    ];
-
-	    filterBar.noUiSlider.on('update', function( values, handle ) {
-	        skipValues[handle].innerHTML = Math.round(values[handle]);
-	        $('.contact100-form-range-value input[name="from-value"]').val($('#value-lower').html());
-	        $('.contact100-form-range-value input[name="to-value"]').val($('#value-upper').html());
-	    });
-	</script>
 <!--===============================================================================================-->
-	<script src="js/main.js"></script>
+<script type="text/javascript" src="js/data.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-23581568-13');
-</script>
 
 </body>
 </html>
