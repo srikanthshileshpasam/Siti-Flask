@@ -260,7 +260,7 @@ input.input100 {
 li.input100 {
   text-align: left !important;
   font-size: 150%;
-  padding-bottom: 2%; 
+  padding-bottom: 2%;
 }
 
 
@@ -336,6 +336,18 @@ textarea.input100 {
   -ms-transform: translateX(10px);
   -o-transform: translateX(10px);
   transform: translateX(10px);
+}
+
+#password-3{
+  -webkit-text-security: disc;
+    -moz-text-security:circle;
+     text-security:circle;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 /*------------------------------------------------------------------

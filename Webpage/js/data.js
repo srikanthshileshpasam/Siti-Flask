@@ -1,9 +1,3 @@
-var agent_DB={'1000':'agent0', '1001':'agent1', '1002':'agent2', '1003':'agent3', '1004':'agent4', '1005':'agent5', '1006':'agent6', '1007':'agent7', '1008':'agent8', '1009':'agent9', '1010':'agent10',
-                '1011':'agent11', '1012':'agent12', '1013':'agent13', '1014':'agent14', '1015':'agent15', '1016':'agent16', '1017':'agent17', '1018':'agent18', '1019':'agent19', '1020':'agent20', '1021':'agent21',
-                '1022':'agent22', '1023':'agent23', '1024':'agent24', '1025':'agent25', '1026':'agent26', '1027':'agent27', '1028':'agent28', '1029':'agent29', '1030':'agent30', '1031':'agent31', '1032':'agent32',
-                '1033':'agent33', '1034':'agent34', '1035':'agent35', '1036':'agent36', '1037':'agent37', '1038':'agent38', '1039':'agent39', '1040':'agent40', '1041':'agent41', '1042':'agent42', '1043':'agent43',
-                '1044':'agent44', '1045':'agent45', '1046':'agent46', '1047':'agent47', '1048':'agent48', '1049':'agent49', '1050':'agent50', '1051':'agent51', '1052':'agent52', '1053':'agent53', '1054':'agent54',
-                '1055':'agent55', '1056':'agent56', '1057':'agent57', '1058':'agent58', '1059':'agent59', '1060':'agent60', '1061':'agent61', '1062':'agent62', '1063':'agent63', '1064':'agent64', '1065':'agent65'};
 
   var cust_DB=[
 	{
@@ -50822,24 +50816,410 @@ var agent_DB={'1000':'agent0', '1001':'agent1', '1002':'agent2', '1003':'agent3'
 	}
 ]
 
-function start(){
 
-  //=>Collecting clicked instance variable from index page to load relevant car data on info page
-
-// initialize an empty object
-let vc = '';
-// get URL query string
-let params = window.location.search;
-// remove the '?' character
-params = params.substr(1);
-let queryParamArray = params.split('&amp;');
-// iterate over parameter array
-queryParamArray.forEach(function(queryParam) {
-// split the query parameter over '='
-let item = queryParam.split("=");
-vc = decodeURIComponent(item[1]);
-});
+var agent_DB=[
+{
+ "FIELD1": "pin",
+ "FIELD2": 1001
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1002
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1003
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1004
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1005
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1006
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1007
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1008
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1009
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1010
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1011
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1012
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1013
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1014
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1015
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1016
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1017
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1018
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1019
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1020
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1021
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1022
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1023
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1024
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1025
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1026
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1027
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1028
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1029
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1030
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1031
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1032
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1033
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1034
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1035
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1036
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1037
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1038
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1039
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1040
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1041
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1042
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1043
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1044
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1045
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1046
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1047
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1048
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1049
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1050
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1051
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1052
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1053
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1054
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1055
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1056
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1057
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1058
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1059
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1060
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1061
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1062
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1063
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1064
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1065
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1066
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1067
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1068
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1069
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1070
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1071
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1072
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1073
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1074
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1075
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1076
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1077
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1078
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1079
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1080
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1081
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1082
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1083
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1084
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1085
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1086
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1087
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1088
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1089
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1090
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1091
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1092
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1093
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1094
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1095
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1096
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1097
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1098
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1099
+},
+{
+ "FIELD1": "pin",
+ "FIELD2": 1100
 }
+]
+
 
 function customerSearch(){
 
@@ -50858,6 +51238,7 @@ for (var x in cust_DB){
 }
     if (customer==null){
         alert("Customer not found!");
+        return false;
       }
     else {
       alert("Customer found!\nCustomer Name: " +customer)
@@ -50867,16 +51248,32 @@ for (var x in cust_DB){
       document.getElementById("c_name").innerHTML = customer;
       document.getElementById("c_phone").innerHTML = phone;
       document.getElementById("d_d").innerHTML = due_date;
+
+      return [vcid, customer, phone, due_date];
     }
     }
 
 
+function agentAuth() {
 
-function agentAuth(){
+      var agent=document.getElementById('password-3').value;
 
-      var agent = agent_DB[0];
+      for (var x in agent_DB){
+        if (agent_DB[x]["FIELD2"]==agent) {
+          var agent_found=agent_DB[x]["FIELD2"];
+        }
+      }
 
-      if (agent==null)
-        {alert("Invalid PIN!");
-          }
+      {if (customerSearch()==false) {
+        alert("Enter customer details first!!")
+        return false;
+      }
+      else if (agent_found==null){
+          alert("Invalid PIN!");
+          return false;
+        }
+      else {
+          alert("Agent verification successful!");
+          return true;
+        }}
 }
