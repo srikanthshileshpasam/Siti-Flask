@@ -50839,24 +50839,44 @@ queryParamArray.forEach(function(queryParam) {
 let item = queryParam.split("=");
 vc = decodeURIComponent(item[1]);
 });
+}
 
+function customerSearch(){
 
+  var customer;
+  var due_date;
+  var phone;
+  var vcid=document.getElementById('vc_no').value;
+  // var today = Utilities.formatDate(new Date(), "GMT+5", "dd/MM/yyyy")
 
 for (var x in cust_DB){
-  if(cust_DB[x]["VC No"]==document.getElementById('vc_no').innerHTML){
-    var customer = cust_DB[x]["Subscriber Name"];
-    var due_date = cust_DB[x]["Due Date"];
-    var phone = cust_DB[x]["Cel 1"];}}
-
+  if (cust_DB[x]["VC No"]==vcid){
+  customer = cust_DB[x]["Subscriber Name"];
+  due_date = cust_DB[x]["Due Date"];
+  phone = cust_DB[x]["Cel 1"];
+  }
+}
     if (customer==null){
-        alert("Customer not found!");}
+        alert("Customer not found!");
+      }
+    else {
+      alert("Customer found!\nCustomer Name: " +customer)
+
+      // location.reload(true);
+      document.getElementById("c_vc").innerHTML = vcid;
+      document.getElementById("c_name").innerHTML = customer;
+      document.getElementById("c_phone").innerHTML = phone;
+      document.getElementById("d_d").innerHTML = due_date;
+    }
+    }
 
 
-      var agent = agent_DB[a_name];
+
+function agentAuth(){
+
+      var agent = agent_DB[0];
 
       if (agent==null)
         {alert("Invalid PIN!");
           }
-
-var today = Utilities.formatDate(new Date(), "GMT+5", "dd/MM/yyyy")
 }

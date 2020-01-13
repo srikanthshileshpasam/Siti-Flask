@@ -13,10 +13,10 @@
             else {
                 $(this).parent().addClass('true-validate');
             }
-        })    
+        })
     })
-  
-  
+
+
     /*==================================================================
     [ Validate ]*/
     var input = $('.validate-input .input100');
@@ -43,12 +43,12 @@
     });
 
      function validate (input) {
-        
+
             if($(input).val().trim() == ''){
                 return false;
             }
         }
-    
+
 
     function showValidate(input) {
         var thisAlert = $(input).parent();
@@ -68,7 +68,7 @@
         $(thisAlert).removeClass('alert-validate');
         $(thisAlert).find('.btn-hide-validate').remove();
     }
-    
-    
+
+
 
 })(jQuery);

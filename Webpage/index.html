@@ -29,10 +29,6 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
 
-		<meta http-equiv=“Pragma” content=”no-cache”>
-	  	<meta http-equiv=“Expires” content=”-1″>
-	  	<meta http-equiv=“CACHE-CONTROL” content=”NO-CACHE”>
-
 	  	<meta name="Siti Collection Entry Web Application" content="A data entry form for Siti Communications Group Agents">
 </head>
 <body>
@@ -44,26 +40,53 @@
 				<span class="contact100-form-title">
 					VC Validation
 				</span>
-			<form action="entry.html" method="GET">
+				<form>
 				<div class="wrap-input100 bg1 rs1-wrap-input100 validate-input" data-validate = "Enter VC Number">
 					<span class="label-input100">VC Number</span>
 					<input class="input100" type="number" name="vc_no" id="vc_no" placeholder="Enter VC Number">
 				</div>
-</form>
-
+			</form>
+			<form>
+			<div class="wrap-contact100">
+				<span id="customer_details">
+					<h5>Customer Details</h2>
+						<div class="">
+								<ul>
+									<p>Customer VC -</p>
+									<li id="c_vc"></li>
+									<p>Customer Name -</p>
+									<li id="c_name"></li>
+									<p>Customer Phone -</p>
+									<li id="c_phone"></li>
+									<p>Due Date -</p>
+									<li id="d_d"></li>
+								</ul>
+							</div>
+				</span>
+			</div>
+		</form>
 				<div class="container-contact100-form-btn">
 					<button class="contact100-form-btn">
 						<span>
-							<a onclick='start()' href='entry.html'>Validate VC</a>
+							<a onclick='customerSearch()' id="search">Validate VC</a>
 							<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
 						</span>
 					</button>
+				</div class="container-contact100-form-btn">
+					<div class="container-contact100-form-btn">
+					<button class="contact100-form-btn">
+						<span>
+						<a id="next" href="entry.html">Fill Details</a>
+						<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+					</span>
+				</button>
+				</div>
+				<div>
+
 				</div>
 			</form>
 		</div>
 	</div>
-
-
 
 <!--===============================================================================================-->
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
